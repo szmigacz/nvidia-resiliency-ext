@@ -1,13 +1,13 @@
+
 # NVIDIA Resiliency Extension
 
-The NVIDIA Resiliency Extension (NVRx) integrates multiple resiliency-focused solutions for PyTorch-based workloads. Users can modularly integrate NVRx capabilities into their own infrastructure to maximize AI training productivity at scale. NVRx maximizes goodput by enabling system-wide health checks, quickly detecting faults at runtime and resuming training automatically. NVRx minimizes loss of work by enabling fast and frequent checkpointing. 
+The NVIDIA Resiliency Extension (NVRx) integrates multiple resiliency-focused solutions for PyTorch-based workloads. Users can modularly integrate NVRx capabilities into their own infrastructure to maximize AI training productivity at scale. NVRx maximizes goodput by enabling system-wide health checks, quickly detecting faults at runtime and resuming training automatically. NVRx minimizes loss of work by enabling fast and frequent checkpointing.
 
-For detailed documentation and usage information about each component, please refer to https://nvidia.github.io/nvidia-resiliency-ext/.
+For detailed documentation and usage information about each component, please refer to <https://nvidia.github.io/nvidia-resiliency-ext/>.
 
 > ⚠️ NOTE: This project is still experimental and under active development. The code, features, and documentation are evolving rapidly. Please expect frequent updates and breaking changes. Contributions are welcome and we encourage you to watch for updates.
 
 <img src="/docs/source/media/nvrx_core_features.png" alt="Figure highlighting core NVRx features including automatic restart, hierarchical checkpointing, fault detection and health checks" width="950" height="350">
-
 
 ## Core Components and Capabilities
 
@@ -35,12 +35,13 @@ For detailed documentation and usage information about each component, please re
 ## Installation
 
 ### From sources
+
 - `git clone https://github.com/NVIDIA/nvidia-resiliency-ext`
 - `cd nvidia-resiliency-ext`
 - `pip install .`
 
-
 ### From PyPI wheel
+
 - `pip install nvidia-resiliency-ext`
 
 ### Platform Support
@@ -55,4 +56,3 @@ For detailed documentation and usage information about each component, please re
 | NVML Driver          | >= 535 (570 required for GPU health check)                                 |
 | NCCL Version         | < 2.28.3 OR >= 2.28.9 (avoid NCCL 2.28.3–2.28.8 due to inprocess issue)    |
 | TE Version           | >= 2.5                                                                     |
-
